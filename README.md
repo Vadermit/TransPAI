@@ -8,9 +8,7 @@ Contents
 
 -   [Strategic aim](#strategic-aim)
 -   [Tasks and challenges](#tasks-and-challenges)
--   [What we care about](#what-we-care-about)
 -   [Selected References](#selected-references):
-
 
 Strategic aim
 --------------
@@ -32,23 +30,10 @@ Tasks and challenges
   - **Random missing**: Each sensor lost their observations at completely random. (★★★)
   - **Non-random missing**: Each sensor lost their observations during several days. (★★★★)
 
-
-What we care about!
---------------
-
-- Best algebraic structure for spatial teemporal data prediction.
-- The context of urban transportation (e.g., biases).
-- Better minning of saptial temporal data characteristic.
-- Data noise avoidance.
-- Competitive data prediction performance.
-- Capable of various missing data scenarios.
-
 Overview
 --------------
 
    >With the development and application of intelligent transportation systems, large quantities of urban traffic data are collected on a continuous basis from various sources, such as loop detectors, cameras, and floating vehicles. These data sets capture the underlying states and dynamics of transportation networks and the whole system and become beneficial to many traffic operation and management applications, including routing, signal control, travel time prediction, and so on. The massive data we acquired gives us the opportunity to look into urban mobility and to mine patterns or characteristics of it. With finely acquired patterns and characteristics, we are able to precisely predict the future traffic status.
-
-
 
 Selected references
 --------------
