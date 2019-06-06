@@ -15,7 +15,7 @@ Contents
 Strategic aim
 --------------
 
->The spatial temporal characteristics of traffic data are mined to predict the future traffic status. And the saptial temporal characteristics are constantly updated and calibrated with the acquisition of new observation data.
+>Minning the spatial temporal characteristics of transportation data to predict the future transportation status. And the saptial temporal characteristics are constantly updated and calibrated with the acquisition of new observation data.
 
 Tasks and challenges
 --------------
@@ -27,7 +27,7 @@ Tasks and challenges
 
 > Challenges
 - ### **Incomplete observations**
-> The data we acquired may not be complete or due to detector mailfunction, data transmission error and so on. We need to mine the data characteristic and make predictions with insufficient information. There are basically two forms of data missing:
+> The data we acquired may not be complete due to detector mailfunction, data transmission error and so on. We need to mine the data characteristic and make predictions with insufficient information. There are basically two forms of data missing:
 
   - **Random missing**: Each sensor lost their observations at completely random. (★★★)
   - **Non-random missing**: Each sensor lost their observations during several days. (★★★★)
