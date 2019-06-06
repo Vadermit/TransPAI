@@ -15,7 +15,7 @@ Contents
 Strategic aim
 --------------
 
->Minning the spatial temporal characteristics of transportation data to predict the future transportation status. And the saptial temporal characteristics are constantly updated and calibrated with the acquisition of new observation data.
+>Minning the spatial temporal characteristics of transportation data to predict the future transportation status. And updating the saptial temporal characteristics with newly observed data.
 
 Tasks and challenges
 --------------
