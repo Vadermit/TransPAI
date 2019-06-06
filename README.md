@@ -1,4 +1,4 @@
-***transpol***
+***TransPOL***
 --------------
 
 >**Trans**portation data **O**n**L**ine **P**rediction (***TransPOL***).
