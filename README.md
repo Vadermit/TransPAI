@@ -71,11 +71,50 @@ Model Comparison
 - ### **Our proposed models**
 <table>
   <tr>
-    <td>One</td>
-    <td>Two</td>
+    <td>Proposed Models</td>
+    <td colspan="2">Seattle Speed Data</td>
+    <td colspan="2">Shanghai Pollutant Data</td>
+    <td>Code Format</td>
   </tr>
   <tr>
-    <td colspan="2">Three</td>
+    <td>Online Tasks:</td>
+    <td>Prediction</td>
+    <td>Imputation</td>
+    <td>Prediction</td>
+    <td>Imputation</td>
+    <td>~</td>
+  </tr>
+  <tr>
+  <td>LSTM-ReMF</td>
+  <td>✔</td>
+  <td>✔</td>
+  <td>✔</td>
+  <td>✔</td>
+  <td>Jupyter Notebook</td>
+  </tr>
+  <tr>
+  <td>LSTM-GL-ReMF</td>
+  <td>✔</td>
+  <td>✔</td>
+  <td>❌</td>
+  <td>❌</td>
+  <td>Jupyter Notebook</td>
+  </tr>
+  <tr>
+  <td>LSTM-ReTF</td>
+  <td>❌</td>
+  <td>❌</td>
+  <td>✔</td>
+  <td>✔</td>
+  <td>Jupyter Notebook</td>
+  </tr>
+  <tr>
+  <td>LSTM-GL-ReTF</td>
+  <td>❌</td>
+  <td>❌</td>
+  <td>✔</td>
+  <td>✔</td>
+  <td>Jupyter Notebook</td>
   </tr>
 </table>
 
