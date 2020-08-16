@@ -114,7 +114,72 @@ Model Comparison
   <td>❌</td>
   <td>✔</td>
   <td>✔</td>
-  <td>Jupyter Notebook <div style="display: inline">http://example.com</div> </td>
+  <td>Jupyter Notebook</td>
+  </tr>
+</table>
+
+- ### **Baseline models**
+<table>
+  <tr>
+    <td>Proposed Models</td>
+    <td colspan="2">Seattle Speed Data</td>
+    <td colspan="2">Shanghai Pollutant Data</td>
+    <td>Code Format</td>
+  </tr>
+  <tr>
+    <td>Online Tasks:</td>
+    <td>Prediction</td>
+    <td>Imputation</td>
+    <td>Prediction</td>
+    <td>Imputation</td>
+    <td> </td>
+  </tr>
+  <tr>
+  <td><b>TRMF</b></td>
+  <td>✔</td>
+  <td>✔</td>
+  <td>✔</td>
+  <td>✔</td>
+  <td>Jupyter Notebook</td>
+  </tr>
+  <tr>
+  <td><b>BTMF</b></td>
+  <td>✔</td>
+  <td>✔</td>
+  <td>✔</td>
+  <td>✔</td>
+  <td>Jupyter Notebook</td>
+  </tr>
+  <tr>
+  <td><b>LSTM</b></td>
+  <td>✔</td>
+  <td>❌</td>
+  <td>✔</td>
+  <td>❌</td>
+  <td>Jupyter Notebook</td>
+  </tr>
+  <tr>
+  <td><b>GRU-D</b></td>
+  <td>✔</td>
+  <td>❌</td>
+  <td>✔</td>
+  <td>❌</td>
+  <td>Jupyter Notebook</td>
+  </tr>
+  <tr>
+  <td><b>GCN-DDGF</b></td>
+  <td>✔</td>
+  <td>❌</td>
+  <td>✔</td>
+  <td>❌</td>
+  <td>Python Code</td>
+  </tr>
+  <td><b>TGC-LSTM</b></td>
+  <td>✔</td>
+  <td>❌</td>
+  <td>❌</td>
+  <td>❌</td>
+  <td>Jupyter Notebook</td>
   </tr>
 </table>
 
