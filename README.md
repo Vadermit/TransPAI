@@ -16,6 +16,8 @@ Contents
 
 -   [Strategic aim](#strategic-aim)
 -   [Tasks and challenges](#tasks-and-challenges)
+-   [Overview](#overview)
+-   [Proposed method](#proposed-method)
 -   [Selected References](#selected-references):
 
 Strategic aim
@@ -42,6 +44,19 @@ Overview
 --------------
 
    >Accurate prediction of traffic status in real time is critical for advanced traffic management and travel navigation guidance. There are many attempts to predict short-term traffic flows using various deep learning algorithms. Most existing prediction models are only tested on spatiotemporal data assuming no missing data entries. However, this ideal situation rarely exists in real world due to sensor or network transmission failure. Missing data is an unnegligible problem.  Previous studies either remove time series with missing entries or impute missing data before building prediction models. The former may cause insufficient data for model training, while the latter adds extra computational burden and the imputation accuracy has direct impacts on the prediction performance. 
+
+
+Proposed method
+--------------
+We propose a framework based on Matrix Factorization which is able to make spatiotemporal predictions using raw incomplete data and perform online data imputation simultaneously. We innovatively design a spatial and temporal regularized matrix factorization model, namely LSTM-GL-ReMF, as the key component of the framework.  
+
+- ### **LSTM Graph Laplacian Regularized Matrix Factorization (LSTM-GL-ReMF)**
+On the basis of TRMF, we propose a novel LSTM and Graph Laplacian regularized matrix factorization (LSTM-GL-ReMF). In LSTM-GL-ReMF, its temporal regularizer depends on the state-of-the-art Long Short-term Memory (LSTM) model, and the spatial regularizer is designed based on Graph Laplacian (GL) spatial regularization. These regularizers enable the incorporation of complex spatial and temporal dependence into matrix factorization process for more accurate prediction performance. The illustration of LSTM-GL-ReMF is presented as:
+
+<p align="center">
+<img align="middle" src="https://github.com/Vadermit/TransPOL/blob/master/images/framework_sub.png" width="700" />
+</p>
+
 
 Selected references
 --------------
