@@ -63,7 +63,7 @@ The proposed MF model can be easily extended to LSTM Regularized Matrix Factoriz
 We propose a framework based on the aforementioned LSTM-(GL-)ReMF/TF models which is able to make spatiotemporal predictions using raw incomplete data and perform online data imputation simultaneously. As shown in the figure below, the framework basically consists of two steps: static training and dynamic prediction and imputation.
 
 <p align="center">
-<img align="middle" src="https://github.com/Vadermit/TransPOL/blob/master/images/framework.png" width="850" />
+<img align="middle" src="https://github.com/Vadermit/TransPOL/blob/master/images/framework_sub.png" width="850" />
 </p>
 
 Selected references
