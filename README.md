@@ -37,8 +37,8 @@ Tasks and challenges
 - ### **Incomplete observations**
 > The data we acquired may not be complete due to detector mailfunction, data transmission error and so on. We need to mine the data characteristic and make predictions with insufficient information. There are basically two forms of data missing:
 
-  - **Point-wise missing (PM)**: Each sensor lost observations for one time step at completely random. 
-  - **Continuous missing (CM)**: Each sensor lost observations for a continuous period e.g. a day. 
+  - **Point-wise missing (PM)**: Each sensor lost observations for individual time steps at completely random. 
+  - **Continuous missing (CM)**: Each sensor lost observations for continuous periods e.g. a day. 
 
 Overview
 --------------
@@ -65,6 +65,20 @@ We propose a framework based on the aforementioned LSTM-(GL-)ReMF/TF models whic
 <p align="center">
 <img align="middle" src="https://github.com/Vadermit/TransPOL/blob/master/images/framework_sub.png" width="850" />
 </p>
+
+Model Comparison
+--------------
+- ### **Our proposed models**
+<table>
+  <tr>
+    <td>One</td>
+    <td>Two</td>
+  </tr>
+  <tr>
+    <td colspan="2">Three</td>
+  </tr>
+</table>
+
 
 Selected references
 --------------
