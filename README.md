@@ -42,18 +42,32 @@ Selected references
 
   - Bing Yu, Haoteng Yin, Zhanxing Zhu, 2017. [*Spatio-temporal graph convolutional networks: a deep learning framework for traffic forecasting*](https://arxiv.org/pdf/1709.04875.pdf). arXiv. ([appear in IJCAI 2018](https://www.ijcai.org/proceedings/2018/0505.pdf))
 
-  - Cui, Zhiyong and Henrickson, Kristian and Ke, Ruimin and Wang, Yinhai, 2019. [*Traffic graph convolutional recurrent neural network: A deep learning framework for network-scale traffic learning and forecasting](https://www.researchgate.net/publication/323302472_Traffic_Graph_Convolutional_Recurrent_Neural_Network_A_Deep_Learning_Framework_for_Network-Scale_Traffic_Learning_and_Forecasting). IEEE Transactions on Intelligent Transportation Systems, 
+  - Cui, Zhiyong and Henrickson, Kristian and Ke, Ruimin and Wang, Yinhai, 2019. [*Traffic graph convolutional recurrent neural network: A deep learning framework for network-scale traffic learning and forecasting](https://www.researchgate.net/publication/323302472_Traffic_Graph_Convolutional_Recurrent_Neural_Network_A_Deep_Learning_Framework_for_Network-Scale_Traffic_Learning_and_Forecasting). IEEE Transactions on Intelligent Transportation Systems.
+  
+  - Lin, Lei and He, Zhengbing and Peeta, Srinivas, 2018. [*Predicting station-level hourly demand in a large-scale bike-sharing network: A graph convolutional neural network approach](https://www.sciencedirect.com/science/article/pii/S0968090X18300974). Transportation Research Part C: Emerging Technologies, 97: 258-276.
+  
+  - Geng, Xu and Li, Yaguang and Wang, Leye and Zhang, Lingyu and Yang, Qiang and Ye, Jieping and Liu, Yan, 2019. [*Spatiotemporal multi-graph convolution network for ride-hailing demand forecasting](https://www.aaai.org/ojs/index.php/AAAI/article/view/4247). Proceedings of the AAAI Conference on Artificial Intelligence, 33: 3656-3663.
+
+  - Qi, Zhongang and Wang, Tianchun and Song, Guojie and Hu, Weisong and Li, Xi and Zhang, Zhongfei, 2018. [*Deep air learning: Interpolation, prediction, and feature analysis of fine-grained air quality](https://ieeexplore.ieee.org/abstract/document/8333777). IEEE Transactions on Knowledge and Data Engineering, 30: 2285-2297.
 
 - ### **Prediction for dataset with missing values**
+  - Hu, Jian and Xin, Xin and Guo, Ping, 2017. [*LSTM with Matrix Factorization for Road Speed Prediction](https://link.springer.com/chapter/10.1007/978-3-319-59072-1_29), 10.1007/978-3-319-59072-1_29.
+  
+  - Sridevi, S and Rajaram, S and Parthiban, C and SibiArasan, S and Swadhikar, C, 2011. [*Imputation for the analysis of missing values and prediction of time series data](https://ieeexplore.ieee.org/abstract/document/5972466/). 2011 International Conference on Recent Trends in Information Technology (ICRTIT), 1158-1163.
+  
+  - Purwar, Archana and Singh, Sandeep Kumar, 2015. [*Hybrid prediction model with missing value imputation for medical data](https://www.sciencedirect.com/science/article/abs/pii/S0957417415001578#:~:text=This%20paper%2C%20presents%20a%20novel,means%20clustering%20with%20Multilayer%20Perceptron.). Expert Systems with Applications, 42: 5621-5631.
+
   - Zhengping Che, Sanjay Purushotham, Kyunghyun Cho, David Sontag, Yan Liu, 2018. [*Recurrent neural networks for multivariate time series with missing values*](https://doi.org/10.1038/s41598-018-24271-9). Scientific Reports, 8(6085).
 
   - Oren Anava, Elad Hazan, Assaf Zeevi, 2015. [*Online time series prediction with missing data*](http://proceedings.mlr.press/v37/anava15.pdf). Proceedings of the 32nd International Conference on Machine Learning (*ICML 2015*), 37: 2191-2199.
 
 - ### **Matrix factorization**
 
-  - San Gultekin, John Paisley, 2019. [*Online Forecasting Matrix Factorization*](https://ieeexplore.ieee.org/document/8590686/). IEEE Transactions on Signal Processing, 67(5): 1223-1236. [[Python code](https://github.com/chloemnge/online_learning)]
+ - Hsiang-Fu Yu, Nikhil Rao, Inderjit S. Dhillon, 2016. [*Temporal regularized matrix factorization for high-dimensional time series prediction*](http://www.cs.utexas.edu/~rofuyu/papers/tr-mf-nips.pdf). 30th Conference on Neural Information Processing Systems (*NIPS 2016*), Barcelona, Spain. [[Matlab code](https://github.com/rofuyu/exp-trmf-nips16)]
 
-- Hsiang-Fu Yu, Nikhil Rao, Inderjit S. Dhillon, 2016. [*Temporal regularized matrix factorization for high-dimensional time series prediction*](http://www.cs.utexas.edu/~rofuyu/papers/tr-mf-nips.pdf). 30th Conference on Neural Information Processing Systems (*NIPS 2016*), Barcelona, Spain. [[Matlab code](https://github.com/rofuyu/exp-trmf-nips16)]
+  - Lijun Sun and Xinyu Chen, 2019. [*Bayesian Temporal Factorization for Multidimensional Time Series Prediction](https://arxiv.org/abs/1910.06366). ArXiv, abs/1910.06366.
+
+  - San Gultekin, John Paisley, 2019. [*Online Forecasting Matrix Factorization*](https://ieeexplore.ieee.org/document/8590686/). IEEE Transactions on Signal Processing, 67(5): 1223-1236. [[Python code](https://github.com/chloemnge/online_learning)]
 
   - Nikhil Rao, Hsiangfu Yu, Pradeep Ravikumar, Inderjit S Dhillon, 2015. [*Collaborative filtering with graph information: Consistency and scalable methods*](http://www.cs.utexas.edu/~rofuyu/papers/grmf-nips.pdf). Neural Information Processing Systems (*NIPS 2015*). [[Matlab code](http://bigdata.ices.utexas.edu/publication/collaborative-filtering-with-graph-information-consistency-and-scalable-methods/)]
 
@@ -70,12 +84,6 @@ Selected references
 
   - Piyush Rai, Yingjian Wang, Shengbo Guo, Gary Chen, David B. Dunsun,	Lawrence Carin, 2014. [*Scalable Bayesian low-rank decomposition of incomplete multiway tensors*](http://people.ee.duke.edu/~lcarin/mpgcp.pdf). Proceedings of the 31st International Conference on Machine Learning (*ICML 2014*), Beijing, China.
 
-
-- ### **Graph neural network**
-
-  - [*How to do Deep Learning on Graphs with Graph Convolutional Networks (Part 1: A High-Level Introduction to Graph Convolutional Networks)*](https://towardsdatascience.com/how-to-do-deep-learning-on-graphs-with-graph-convolutional-networks-7d2250723780). blog post.
-
-- ### **Missing data imputation**
 
 Our blog posts (in Chinese)
 --------------
