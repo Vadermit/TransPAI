@@ -85,7 +85,7 @@ Model Comparison
     <td>~</td>
   </tr>
   <tr>
-  <td>LSTM-ReMF</td>
+  <td><b>LSTM-ReMF</b></td>
   <td>✔</td>
   <td>✔</td>
   <td>✔</td>
