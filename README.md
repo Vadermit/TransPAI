@@ -1,7 +1,15 @@
 ***TransPOL***
 --------------
 
->**Trans**portation data **O**n**L**ine **P**rediction (***TransPOL***).
+[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
+![Python 3.7](https://img.shields.io/badge/Python-3.7-blue.svg)
+[![repo size](https://img.shields.io/github/repo-size/Vadermit/TransPOL.svg)](https://github.com/Vadermit/TransPOL/archive/master.zip)
+[![GitHub stars](https://img.shields.io/github/stars/Vadermit/TransPOL.svg?logo=github&label=Stars&logoColor=white)](https://github.com/Vadermit/TransPOL)
+
+
+> **Trans**portation data **O**n**L**ine **P**rediction (***TransPOL***).
+
+> This is the code repository for paper 'Real-time Spatiotemporal Prediction and Imputation of Traffic Status Based onLSTM and Graph Laplacian Regularized Matrix Factorization' which is submitted to Transportation Research Part C: Emerging Technologies
 
 Contents
 --------
@@ -13,36 +21,49 @@ Contents
 Strategic aim
 --------------
 
->Minning the spatial temporal characteristics of transportation data to predict the future transportation status. And updating the saptial temporal characteristics with newly observed data.
+>Minning the spatial temporal characteristics of transportation data to predict the future transportation status. And impute possible missing entries with the real-time data collection.
 
 Tasks and challenges
 --------------
 > Tasks
-- ### **Online traffic prediction**
+- ### **Online traffic data prediction and imputation**
 
-  - Forecasting **without missing values**. (★★★)
-  - Forecasting **with incomplete observations**. (★★★★★)
+  - Online prediction **Predict traffic status in the next time step using real-time observation data**. 
+  - Online imuputation **Impute incomplete observations with the real-time data collection**. 
 
 > Challenges
 - ### **Incomplete observations**
 > The data we acquired may not be complete due to detector mailfunction, data transmission error and so on. We need to mine the data characteristic and make predictions with insufficient information. There are basically two forms of data missing:
 
-  - **Random missing**: Each sensor lost their observations at completely random. (★★★)
-  - **Non-random missing**: Each sensor lost their observations during several days. (★★★★)
+  - **Point-wise missing (PM)**: Each sensor lost observations for one time step at completely random. 
+  - **Continuous missing (CM)**: Each sensor lost observations for a continuous period e.g. a day. 
 
 Overview
 --------------
 
-   >With the development and application of intelligent transportation systems, large quantities of urban traffic data are collected on a continuous basis from various sources, such as loop detectors, cameras, and floating vehicles. These data sets capture the underlying states and dynamics of transportation networks and the whole system and become beneficial to many traffic operation and management applications, including routing, signal control, travel time prediction, and so on. The massive data we acquired gives us the opportunity to look into urban mobility and to mine patterns or characteristics of it. With finely acquired patterns and characteristics, we are able to precisely predict the future traffic status.
+   >Accurate prediction of traffic status in real time is critical for advanced traffic management and travel navigation guidance. There are many attempts to predict short-term traffic flows using various deep learning algorithms. Most existing prediction models are only tested on spatiotemporal data assuming no missing data entries. However, this ideal situation rarely exists in real world due to sensor or network transmission failure. Missing data is an unnegligible problem.  Previous studies either remove time series with missing entries or impute missing data before building prediction models. The former may cause insufficient data for model training, while the latter adds extra computational burden and the imputation accuracy has direct impacts on the prediction performance. 
 
 Selected references
 --------------
 
 - ### **Spatio-temporal forecasting**
 
-  - San Gultekin, John Paisley, 2019. [*Online Forecasting Matrix Factorization*](https://ieeexplore.ieee.org/document/8590686/). IEEE Transactions on Signal Processing, 67(5): 1223-1236. [[Python code](https://github.com/chloemnge/online_learning)]
-
   - Bing Yu, Haoteng Yin, Zhanxing Zhu, 2017. [*Spatio-temporal graph convolutional networks: a deep learning framework for traffic forecasting*](https://arxiv.org/pdf/1709.04875.pdf). arXiv. ([appear in IJCAI 2018](https://www.ijcai.org/proceedings/2018/0505.pdf))
+
+  - Cui, Zhiyong and Henrickson, Kristian and Ke, Ruimin and Wang, Yinhai, 2019. [*Traffic graph convolutional recurrent neural network: A deep learning framework for network-scale traffic learning and forecasting](https://www.researchgate.net/publication/323302472_Traffic_Graph_Convolutional_Recurrent_Neural_Network_A_Deep_Learning_Framework_for_Network-Scale_Traffic_Learning_and_Forecasting). IEEE Transactions on Intelligent Transportation Systems.
+  
+  - Lin, Lei and He, Zhengbing and Peeta, Srinivas, 2018. [*Predicting station-level hourly demand in a large-scale bike-sharing network: A graph convolutional neural network approach](https://www.sciencedirect.com/science/article/pii/S0968090X18300974). Transportation Research Part C: Emerging Technologies, 97: 258-276.
+  
+  - Geng, Xu and Li, Yaguang and Wang, Leye and Zhang, Lingyu and Yang, Qiang and Ye, Jieping and Liu, Yan, 2019. [*Spatiotemporal multi-graph convolution network for ride-hailing demand forecasting](https://www.aaai.org/ojs/index.php/AAAI/article/view/4247). Proceedings of the AAAI Conference on Artificial Intelligence, 33: 3656-3663.
+
+  - Qi, Zhongang and Wang, Tianchun and Song, Guojie and Hu, Weisong and Li, Xi and Zhang, Zhongfei, 2018. [*Deep air learning: Interpolation, prediction, and feature analysis of fine-grained air quality](https://ieeexplore.ieee.org/abstract/document/8333777). IEEE Transactions on Knowledge and Data Engineering, 30: 2285-2297.
+
+- ### **Prediction for dataset with missing values**
+  - Hu, Jian and Xin, Xin and Guo, Ping, 2017. [*LSTM with Matrix Factorization for Road Speed Prediction](https://link.springer.com/chapter/10.1007/978-3-319-59072-1_29), 10.1007/978-3-319-59072-1_29.
+  
+  - Sridevi, S and Rajaram, S and Parthiban, C and SibiArasan, S and Swadhikar, C, 2011. [*Imputation for the analysis of missing values and prediction of time series data](https://ieeexplore.ieee.org/abstract/document/5972466/). 2011 International Conference on Recent Trends in Information Technology (ICRTIT), 1158-1163.
+  
+  - Purwar, Archana and Singh, Sandeep Kumar, 2015. [*Hybrid prediction model with missing value imputation for medical data](https://www.sciencedirect.com/science/article/abs/pii/S0957417415001578#:~:text=This%20paper%2C%20presents%20a%20novel,means%20clustering%20with%20Multilayer%20Perceptron.). Expert Systems with Applications, 42: 5621-5631.
 
   - Zhengping Che, Sanjay Purushotham, Kyunghyun Cho, David Sontag, Yan Liu, 2018. [*Recurrent neural networks for multivariate time series with missing values*](https://doi.org/10.1038/s41598-018-24271-9). Scientific Reports, 8(6085).
 
@@ -50,10 +71,15 @@ Selected references
 
 - ### **Matrix factorization**
 
+ - Hsiang-Fu Yu, Nikhil Rao, Inderjit S. Dhillon, 2016. [*Temporal regularized matrix factorization for high-dimensional time series prediction*](http://www.cs.utexas.edu/~rofuyu/papers/tr-mf-nips.pdf). 30th Conference on Neural Information Processing Systems (*NIPS 2016*), Barcelona, Spain. [[Matlab code](https://github.com/rofuyu/exp-trmf-nips16)]
+
+  - Lijun Sun and Xinyu Chen, 2019. [*Bayesian Temporal Factorization for Multidimensional Time Series Prediction](https://arxiv.org/abs/1910.06366). ArXiv, abs/1910.06366.
+
+  - San Gultekin, John Paisley, 2019. [*Online Forecasting Matrix Factorization*](https://ieeexplore.ieee.org/document/8590686/). IEEE Transactions on Signal Processing, 67(5): 1223-1236. [[Python code](https://github.com/chloemnge/online_learning)]
+
   - Nikhil Rao, Hsiangfu Yu, Pradeep Ravikumar, Inderjit S Dhillon, 2015. [*Collaborative filtering with graph information: Consistency and scalable methods*](http://www.cs.utexas.edu/~rofuyu/papers/grmf-nips.pdf). Neural Information Processing Systems (*NIPS 2015*). [[Matlab code](http://bigdata.ices.utexas.edu/publication/collaborative-filtering-with-graph-information-consistency-and-scalable-methods/)]
 
-  - Hsiang-Fu Yu, Nikhil Rao, Inderjit S. Dhillon, 2016. [*Temporal regularized matrix factorization for high-dimensional time series prediction*](http://www.cs.utexas.edu/~rofuyu/papers/tr-mf-nips.pdf). 30th Conference on Neural Information Processing Systems (*NIPS 2016*), Barcelona, Spain. [[Matlab code](https://github.com/rofuyu/exp-trmf-nips16)]
-
+  
 
 - ### **Bayesian matrix and tensor factorization**
 
@@ -65,12 +91,6 @@ Selected references
 
   - Piyush Rai, Yingjian Wang, Shengbo Guo, Gary Chen, David B. Dunsun,	Lawrence Carin, 2014. [*Scalable Bayesian low-rank decomposition of incomplete multiway tensors*](http://people.ee.duke.edu/~lcarin/mpgcp.pdf). Proceedings of the 31st International Conference on Machine Learning (*ICML 2014*), Beijing, China.
 
-
-- ### **Graph neural network**
-
-  - [*How to do Deep Learning on Graphs with Graph Convolutional Networks (Part 1: A High-Level Introduction to Graph Convolutional Networks)*](https://towardsdatascience.com/how-to-do-deep-learning-on-graphs-with-graph-convolutional-networks-7d2250723780). blog post.
-
-- ### **Missing data imputation**
 
 Our blog posts (in Chinese)
 --------------
