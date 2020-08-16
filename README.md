@@ -1,9 +1,15 @@
 ***TransPOL***
 --------------
 
->**Trans**portation data **O**n**L**ine **P**rediction (***TransPOL***).
+[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
+![Python 3.7](https://img.shields.io/badge/Python-3.7-blue.svg)
+[![repo size](https://img.shields.io/github/repo-size/Vadermit/TransPOL.svg)](https://github.com/Vadermit/TransPOL/archive/master.zip)
+[![GitHub stars](https://img.shields.io/github/stars/Vadermit/TransPOL.svg?logo=github&label=Stars&logoColor=white)](https://github.com/Vadermit/TransPOL)
 
-> Code repository for paper 'Real-time Spatiotemporal Prediction and Imputation of Traffic Status Based onLSTM and Graph Laplacian Regularized Matrix Factorization' which is submitted to Transportation Research Part C: Emerging Technologies
+
+> **Trans**portation data **O**n**L**ine **P**rediction (***TransPOL***).
+
+> This is the code repository for paper 'Real-time Spatiotemporal Prediction and Imputation of Traffic Status Based onLSTM and Graph Laplacian Regularized Matrix Factorization' which is submitted to Transportation Research Part C: Emerging Technologies
 
 Contents
 --------
