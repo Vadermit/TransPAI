@@ -82,7 +82,7 @@ Model Comparison
     <td>Imputation</td>
     <td>Prediction</td>
     <td>Imputation</td>
-    <td>~</td>
+    <td> </td>
   </tr>
   <tr>
   <td><b>LSTM-ReMF</b></td>
@@ -93,7 +93,7 @@ Model Comparison
   <td>Jupyter Notebook</td>
   </tr>
   <tr>
-  <td>LSTM-GL-ReMF</td>
+  <td><b>LSTM-GL-ReMF</b></td>
   <td>✔</td>
   <td>✔</td>
   <td>❌</td>
@@ -101,7 +101,7 @@ Model Comparison
   <td>Jupyter Notebook</td>
   </tr>
   <tr>
-  <td>LSTM-ReTF</td>
+  <td><b>LSTM-ReTF</b></td>
   <td>❌</td>
   <td>❌</td>
   <td>✔</td>
@@ -109,7 +109,7 @@ Model Comparison
   <td>Jupyter Notebook</td>
   </tr>
   <tr>
-  <td>LSTM-GL-ReTF</td>
+  <td><b>LSTM-GL-ReTF</b></td>
   <td>❌</td>
   <td>❌</td>
   <td>✔</td>
