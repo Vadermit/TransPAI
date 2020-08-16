@@ -119,3 +119,9 @@ Our blog posts (in Chinese)
 --------------
 
   - [时序矩阵分解 | 时序数据修补与预测](https://zhuanlan.zhihu.com/p/56105537), by Jamie Yang (杨津铭).
+  
+
+License
+--------------
+
+This work is released under the MIT license.
