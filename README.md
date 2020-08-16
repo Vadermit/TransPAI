@@ -3,6 +3,8 @@
 
 >**Trans**portation data **O**n**L**ine **P**rediction (***TransPOL***).
 
+> Code repository for paper 'Real-time Spatiotemporal Prediction and Imputation of Traffic Status Based onLSTM and Graph Laplacian Regularized Matrix Factorization' which is submitted to Transportation Research Part C: Emerging Technologies
+
 Contents
 --------
 
@@ -72,7 +74,6 @@ Selected references
   - Nikhil Rao, Hsiangfu Yu, Pradeep Ravikumar, Inderjit S Dhillon, 2015. [*Collaborative filtering with graph information: Consistency and scalable methods*](http://www.cs.utexas.edu/~rofuyu/papers/grmf-nips.pdf). Neural Information Processing Systems (*NIPS 2015*). [[Matlab code](http://bigdata.ices.utexas.edu/publication/collaborative-filtering-with-graph-information-consistency-and-scalable-methods/)]
 
   
-
 
 - ### **Bayesian matrix and tensor factorization**
 
