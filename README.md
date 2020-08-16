@@ -57,6 +57,14 @@ On the basis of TRMF, we propose a novel LSTM and Graph Laplacian regularized ma
 <img align="middle" src="https://github.com/Vadermit/TransPOL/blob/master/images/lstmremf.png" width="650" />
 </p>
 
+The proposed MF model can be easily extended to LSTM Regularized Matrix Factorization (LSTM-ReMF) model by neglectng the Graph Laplacian spatial regularizer. LSTM-ReMF and LSTM-GL-ReMF can also be extended to there tensor deomcomposition version LSTM-ReTF and LSTM-GL-ReTF respectively by following the tensor Canonical Polyadic (CP) decomposition method.
+
+- ### **An online prediction and imputation framework for spatiotemporal traffic status**
+We propose a framework based on the aforementioned LSTM-(GL-)ReMF/TF models which is able to make spatiotemporal predictions using raw incomplete data and perform online data imputation simultaneously. As shown in the figure below, the framework basically consists of two steps: static training and dynamic prediction and imputation.
+
+<p align="center">
+<img align="middle" src="https://github.com/Vadermit/TransPOL/blob/master/images/framework.png" width="850" />
+</p>
 
 Selected references
 --------------
