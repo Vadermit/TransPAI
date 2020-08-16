@@ -54,7 +54,7 @@ We propose a framework based on Matrix Factorization which is able to make spati
 On the basis of TRMF, we propose a novel LSTM and Graph Laplacian regularized matrix factorization (LSTM-GL-ReMF). In LSTM-GL-ReMF, its temporal regularizer depends on the state-of-the-art Long Short-term Memory (LSTM) model, and the spatial regularizer is designed based on Graph Laplacian (GL) spatial regularization. These regularizers enable the incorporation of complex spatial and temporal dependence into matrix factorization process for more accurate prediction performance. The illustration of LSTM-GL-ReMF is presented as:
 
 <p align="center">
-<img align="middle" src="https://github.com/Vadermit/TransPOL/blob/master/images/framework_sub.png" width="850" />
+<img align="middle" src="https://github.com/Vadermit/TransPOL/blob/master/images/lstmremf.png" width="650" />
 </p>
 
 
