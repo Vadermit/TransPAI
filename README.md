@@ -114,7 +114,7 @@ Model Comparison
   <td>❌</td>
   <td>✔</td>
   <td>✔</td>
-  <td>[Jupyter Notebook](www.bing.com) </td>
+  <td>Jupyter Notebook <div style="display: inline">http://example.com</div> </td>
   </tr>
 </table>
 
