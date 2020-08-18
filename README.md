@@ -23,7 +23,7 @@ Contents
 Strategic aim
 --------------
 
->Minning the spatial temporal characteristics of transportation data to predict the future transportation status. And impute possible missing entries with the real-time data collection.
+>Minning the spatial temporal characteristics of transportation data to predict the future transportation status. And impute possible missing entries along the real-time data collection.
 
 Tasks and challenges
 --------------
