@@ -1,0 +1,39 @@
+base_dir: results
+data:
+  batch_size: 100
+  dataset_dir: ../data/Metr_data
+  pattern: CM0.4
+  test_batch_size: 100
+  val_batch_size: 100
+log_level: INFO
+model:
+  cl_decay_steps: 2000
+  horizon: 1
+  input_dim: 1
+  l1_decay: 0
+  num_nodes: 207
+  num_rnn_layers: 1
+  output_dim: 1
+  rnn_units: 60
+  seq_len: 3
+  use_curriculum_learning: true
+train:
+  base_lr: 0.01
+  dropout: 0
+  epoch: 0
+  epochs: 200
+  epsilon: 0.001
+  global_step: 124
+  groundtruth_file: y_truth_GCNN_Metr.csv
+  log_dir: results\GCNN_DDGF_h_1_60_lr_0.01_bs_100_0131094542/
+  lr_decay_ratio: 0.1
+  max_grad_norm: 5
+  max_to_keep: 100
+  min_learning_rate: 2.0e-06
+  model_filename: results\GCNN_DDGF_h_1_60_lr_0.01_bs_100_0131094542/models-201.5155-124
+  optimizer: adam
+  patience: 10
+  preds_file: GCNN_Metr.csv
+  steps:
+  - 20
+  test_every_n_epochs: 1
