@@ -19,10 +19,10 @@ def create_sample(data_mat, time_lags):
 
 time_lags = np.array([1, 2, 288])
 
-pattern = ['RM0', 'RM0.1', 'RM0.2', 'RM0.4', 'NM0.1', 'NM0.2', 'NM0.4']
-
+# pattern = ['RM0', 'RM0.1', 'RM0.2', 'RM0.4', 'NM0.1', 'NM0.2', 'NM0.4']
+pattern = ['PM0.2']
 for pt in pattern:
-    directory = '../../datasets/Seattle_loop-data-set/'
+    directory = '../../../datasets/Seattle_loop-data-set/'
     A = np.load( directory + 'Loop_Seattle_2015_A.npy')
     dense_mat = np.load( directory + 'dense_mat.npy')
     print('Dataset shape:')
