@@ -1,0 +1,38 @@
+2021-01-30 15:32:39,766 - model.gcnn_supervisor - INFO - Log directory: results\GCNN_DDGF_h_1_60_lr_0.01_bs_100_0130153239/
+2021-01-30 15:32:39,774 - model.gcnn_supervisor - INFO - {'base_dir': 'results', 'log_level': 'INFO', 'data': {'batch_size': 100, 'pattern': 'PM0', 'dataset_dir': '../data/Metr_data', 'test_batch_size': 100, 'val_batch_size': 100}, 'model': {'cl_decay_steps': 2000, 'horizon': 1, 'input_dim': 1, 'l1_decay': 0, 'num_nodes': 207, 'num_rnn_layers': 1, 'output_dim': 1, 'rnn_units': 60, 'seq_len': 3, 'use_curriculum_learning': True}, 'train': {'base_lr': 0.01, 'dropout': 0, 'epoch': 0, 'epochs': 200, 'epsilon': 0.001, 'global_step': 0, 'lr_decay_ratio': 0.1, 'max_grad_norm': 5, 'max_to_keep': 100, 'min_learning_rate': 2e-06, 'optimizer': 'adam', 'patience': 10, 'steps': [20], 'test_every_n_epochs': 1, 'preds_file': 'GCNN_Metr.csv', 'groundtruth_file': 'y_truth_GCNN_Metr.csv'}}
+2021-01-30 15:32:40,214 - model.gcnn_supervisor - INFO - ('x_train', (12383, 3, 207, 1))
+2021-01-30 15:32:40,215 - model.gcnn_supervisor - INFO - ('y_train', (12383, 1, 207, 1))
+2021-01-30 15:32:40,220 - model.gcnn_supervisor - INFO - ('x_val', (2881, 3, 207, 1))
+2021-01-30 15:32:40,221 - model.gcnn_supervisor - INFO - ('y_val', (12383, 1, 207, 1))
+2021-01-30 15:32:40,222 - model.gcnn_supervisor - INFO - ('x_test', (1440, 3, 207, 1))
+2021-01-30 15:32:40,225 - model.gcnn_supervisor - INFO - ('y_test', (1440, 1, 207, 1))
+2021-01-30 15:32:40,229 - model.gcnn_supervisor - INFO - ('y_test_groundtruth', (1440, 1, 207, 1))
+2021-01-30 15:32:42,357 - model.gcnn_supervisor - INFO - Total number of trainable parameters: 193776
+2021-01-30 15:32:42,551 - model.gcnn_supervisor - INFO - Start training ...
+2021-01-30 15:33:24,631 - model.gcnn_supervisor - INFO - Epoch [0/200] (124) train_mae: 115.4351, val_mae: 515.5477 lr:0.010000 42.0s
+2021-01-30 15:33:27,022 - model.gcnn_supervisor - INFO - Overall Test MAPE 7.9266, RMSE 5.8052
+2021-01-30 15:33:27,106 - model.gcnn_supervisor - INFO - Val loss decrease from inf to 515.5477, saving to results\GCNN_DDGF_h_1_60_lr_0.01_bs_100_0130153239/models-515.5477-124
+2021-01-30 15:33:27,141 - model.gcnn_supervisor - INFO - Overall Test MAPE 2181.2568, RMSE 1267.6753
+2021-01-30 15:34:11,454 - model.gcnn_supervisor - INFO - Epoch [1/200] (248) train_mae: 46.4173, val_mae: 530.3680 lr:0.010000 44.3s
+2021-01-30 15:34:13,796 - model.gcnn_supervisor - INFO - Overall Test MAPE 7.5659, RMSE 5.7795
+2021-01-30 15:34:58,763 - model.gcnn_supervisor - INFO - Epoch [2/200] (372) train_mae: 45.4866, val_mae: 552.5968 lr:0.010000 45.0s
+2021-01-30 15:35:01,169 - model.gcnn_supervisor - INFO - Overall Test MAPE 6.8896, RMSE 5.7782
+2021-01-30 15:35:45,144 - model.gcnn_supervisor - INFO - Epoch [3/200] (496) train_mae: 44.6802, val_mae: 545.2282 lr:0.010000 44.0s
+2021-01-30 15:35:48,178 - model.gcnn_supervisor - INFO - Overall Test MAPE 7.0996, RMSE 5.8239
+2021-01-30 15:36:37,765 - model.gcnn_supervisor - INFO - Epoch [4/200] (620) train_mae: 44.3778, val_mae: 531.8322 lr:0.010000 49.6s
+2021-01-30 15:36:40,308 - model.gcnn_supervisor - INFO - Overall Test MAPE 7.2365, RMSE 5.7942
+2021-01-30 15:37:29,970 - model.gcnn_supervisor - INFO - Epoch [5/200] (744) train_mae: 43.8779, val_mae: 556.8248 lr:0.010000 49.7s
+2021-01-30 15:37:32,820 - model.gcnn_supervisor - INFO - Overall Test MAPE 6.7978, RMSE 5.7724
+2021-01-30 15:38:29,518 - model.gcnn_supervisor - INFO - Epoch [6/200] (868) train_mae: 43.6633, val_mae: 555.6771 lr:0.010000 56.7s
+2021-01-30 15:38:33,992 - model.gcnn_supervisor - INFO - Overall Test MAPE 6.7320, RMSE 5.7435
+2021-01-30 15:39:32,158 - model.gcnn_supervisor - INFO - Epoch [7/200] (992) train_mae: 43.5383, val_mae: 550.0052 lr:0.010000 58.2s
+2021-01-30 15:39:34,910 - model.gcnn_supervisor - INFO - Overall Test MAPE 6.7522, RMSE 5.7271
+2021-01-30 15:40:29,853 - model.gcnn_supervisor - INFO - Epoch [8/200] (1116) train_mae: 43.2571, val_mae: 552.6889 lr:0.010000 54.9s
+2021-01-30 15:40:33,082 - model.gcnn_supervisor - INFO - Overall Test MAPE 7.0265, RMSE 5.7641
+2021-01-30 15:41:31,869 - model.gcnn_supervisor - INFO - Epoch [9/200] (1240) train_mae: 43.0044, val_mae: 553.1815 lr:0.010000 58.8s
+2021-01-30 15:41:35,143 - model.gcnn_supervisor - INFO - Overall Test MAPE 6.7341, RMSE 5.7215
+2021-01-30 15:42:32,496 - model.gcnn_supervisor - INFO - Epoch [10/200] (1364) train_mae: 42.9712, val_mae: 528.1909 lr:0.010000 57.4s
+2021-01-30 15:42:35,274 - model.gcnn_supervisor - INFO - Overall Test MAPE 6.9520, RMSE 5.6577
+2021-01-30 15:43:24,918 - model.gcnn_supervisor - INFO - Epoch [11/200] (1488) train_mae: 42.6050, val_mae: 527.0974 lr:0.010000 49.6s
+2021-01-30 15:43:27,742 - model.gcnn_supervisor - INFO - Overall Test MAPE 7.0436, RMSE 5.6931
+2021-01-30 15:43:27,744 - model.gcnn_supervisor - WARNING - Early stopping at epoch: 11
