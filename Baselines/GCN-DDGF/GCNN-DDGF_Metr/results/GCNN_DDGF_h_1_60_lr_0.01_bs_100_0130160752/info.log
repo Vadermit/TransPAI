@@ -1,0 +1,29 @@
+2021-01-30 16:07:52,851 - model.gcnn_supervisor - INFO - Log directory: results\GCNN_DDGF_h_1_60_lr_0.01_bs_100_0130160752/
+2021-01-30 16:07:52,860 - model.gcnn_supervisor - INFO - {'base_dir': 'results', 'log_level': 'INFO', 'data': {'batch_size': 100, 'pattern': 'PM0.4', 'dataset_dir': '../data/Metr_data', 'test_batch_size': 100, 'val_batch_size': 100}, 'model': {'cl_decay_steps': 2000, 'horizon': 1, 'input_dim': 1, 'l1_decay': 0, 'num_nodes': 207, 'num_rnn_layers': 1, 'output_dim': 1, 'rnn_units': 60, 'seq_len': 3, 'use_curriculum_learning': True}, 'train': {'base_lr': 0.01, 'dropout': 0, 'epoch': 0, 'epochs': 200, 'epsilon': 0.001, 'global_step': 0, 'lr_decay_ratio': 0.1, 'max_grad_norm': 5, 'max_to_keep': 100, 'min_learning_rate': 2e-06, 'optimizer': 'adam', 'patience': 10, 'steps': [20], 'test_every_n_epochs': 1, 'preds_file': 'GCNN_Metr.csv', 'groundtruth_file': 'y_truth_GCNN_Metr.csv'}}
+2021-01-30 16:07:53,360 - model.gcnn_supervisor - INFO - ('x_train', (12383, 3, 207, 1))
+2021-01-30 16:07:53,363 - model.gcnn_supervisor - INFO - ('y_train', (12383, 1, 207, 1))
+2021-01-30 16:07:53,367 - model.gcnn_supervisor - INFO - ('x_val', (2881, 3, 207, 1))
+2021-01-30 16:07:53,367 - model.gcnn_supervisor - INFO - ('y_val', (12383, 1, 207, 1))
+2021-01-30 16:07:53,368 - model.gcnn_supervisor - INFO - ('x_test', (1440, 3, 207, 1))
+2021-01-30 16:07:53,369 - model.gcnn_supervisor - INFO - ('y_test', (1440, 1, 207, 1))
+2021-01-30 16:07:53,370 - model.gcnn_supervisor - INFO - ('y_test_groundtruth', (1440, 1, 207, 1))
+2021-01-30 16:07:55,779 - model.gcnn_supervisor - INFO - Total number of trainable parameters: 193776
+2021-01-30 16:07:55,935 - model.gcnn_supervisor - INFO - Start training ...
+2021-01-30 16:08:39,228 - model.gcnn_supervisor - INFO - Epoch [0/200] (124) train_mae: 839.7292, val_mae: 981.6329 lr:0.010000 43.3s
+2021-01-30 16:08:41,756 - model.gcnn_supervisor - INFO - Val loss decrease from inf to 981.6329, saving to results\GCNN_DDGF_h_1_60_lr_0.01_bs_100_0130160752/models-981.6329-124
+2021-01-30 16:08:41,784 - model.gcnn_supervisor - INFO - Overall Test MAPE 42.3489, RMSE 26.1476
+2021-01-30 16:09:27,468 - model.gcnn_supervisor - INFO - Epoch [1/200] (248) train_mae: 822.4653, val_mae: 975.6806 lr:0.010000 45.7s
+2021-01-30 16:09:30,074 - model.gcnn_supervisor - INFO - Val loss decrease from 981.6329 to 975.6806, saving to results\GCNN_DDGF_h_1_60_lr_0.01_bs_100_0130160752/models-975.6806-248
+2021-01-30 16:09:30,102 - model.gcnn_supervisor - INFO - Overall Test MAPE 42.1196, RMSE 25.9628
+2021-01-30 16:10:14,350 - model.gcnn_supervisor - INFO - Epoch [2/200] (372) train_mae: 819.8087, val_mae: 979.2647 lr:0.010000 44.2s
+2021-01-30 16:11:00,474 - model.gcnn_supervisor - INFO - Epoch [3/200] (496) train_mae: 818.2437, val_mae: 977.9335 lr:0.010000 43.7s
+2021-01-30 16:11:45,128 - model.gcnn_supervisor - INFO - Epoch [4/200] (620) train_mae: 817.2498, val_mae: 986.5115 lr:0.010000 42.2s
+2021-01-30 16:12:29,602 - model.gcnn_supervisor - INFO - Epoch [5/200] (744) train_mae: 816.0984, val_mae: 985.7788 lr:0.010000 42.2s
+2021-01-30 16:13:13,913 - model.gcnn_supervisor - INFO - Epoch [6/200] (868) train_mae: 815.0530, val_mae: 985.0912 lr:0.010000 42.1s
+2021-01-30 16:14:01,880 - model.gcnn_supervisor - INFO - Epoch [7/200] (992) train_mae: 814.2970, val_mae: 986.9423 lr:0.010000 45.7s
+2021-01-30 16:14:54,794 - model.gcnn_supervisor - INFO - Epoch [8/200] (1116) train_mae: 813.5399, val_mae: 991.2806 lr:0.010000 50.2s
+2021-01-30 16:15:42,474 - model.gcnn_supervisor - INFO - Epoch [9/200] (1240) train_mae: 812.6469, val_mae: 989.4109 lr:0.010000 45.0s
+2021-01-30 16:16:27,396 - model.gcnn_supervisor - INFO - Epoch [10/200] (1364) train_mae: 811.8065, val_mae: 990.1078 lr:0.010000 42.5s
+2021-01-30 16:17:12,942 - model.gcnn_supervisor - INFO - Epoch [11/200] (1488) train_mae: 810.9680, val_mae: 987.2254 lr:0.010000 43.3s
+2021-01-30 16:17:57,924 - model.gcnn_supervisor - INFO - Epoch [12/200] (1612) train_mae: 810.5398, val_mae: 988.5836 lr:0.010000 42.7s
+2021-01-30 16:18:00,271 - model.gcnn_supervisor - WARNING - Early stopping at epoch: 12
