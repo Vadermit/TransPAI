@@ -1,0 +1,8 @@
+## Instruction on how to run the experiment:
+1. Open terminal on Linux or cmd.exe on Windows at this folder.
+2. Type and run 'python data_loder_metr_data.py' (This step generate data samples in dir '../data/metr_data/'. )
+3. Type and run 'python gcnn_ddgf_train.py --config_filename=model_config/GCNN_DDGF_me_speed.yaml'
+
+Remark: 
+1. To change missing rate, open 'model_config/GCNN_DDGF_se_speed.yaml' and revise `pattern: CM0.4` to other optional missing pattern (PM0, PM0.1, PM0.2, PM0.4, CM0.1, CM0.2, CM0.4)
+2. For other missing rates, please open 'data_loder_se_data.py' and revise `pattern = [...]` to what ever missing rate you want.
