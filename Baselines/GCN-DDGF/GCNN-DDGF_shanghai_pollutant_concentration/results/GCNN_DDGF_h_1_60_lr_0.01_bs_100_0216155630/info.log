@@ -1,0 +1,11 @@
+2021-02-16 15:56:30,125 - model.gcnn_supervisor - INFO - Log directory: results\GCNN_DDGF_h_1_60_lr_0.01_bs_100_0216155630/
+2021-02-16 15:56:30,130 - model.gcnn_supervisor - INFO - {'base_dir': 'results', 'log_level': 'INFO', 'data': {'batch_size': 100, 'pattern': 'PM0', 'dataset_dir': 'data', 'test_batch_size': 100, 'val_batch_size': 100}, 'model': {'cl_decay_steps': 2000, 'horizon': 1, 'input_dim': 1, 'l1_decay': 0, 'num_nodes': 72, 'num_rnn_layers': 1, 'output_dim': 1, 'rnn_units': 60, 'seq_len': 24, 'use_curriculum_learning': True}, 'train': {'base_lr': 0.01, 'dropout': 0, 'epoch': 0, 'epochs': 35, 'epsilon': 0.001, 'global_step': 0, 'lr_decay_ratio': 0.1, 'max_grad_norm': 5, 'max_to_keep': 100, 'min_learning_rate': 2e-06, 'optimizer': 'adam', 'patience': 50, 'steps': [20], 'test_every_n_epochs': 1, 'preds_file': 'GCNN_shanghai.csv', 'groundtruth_file': 'y_truth_GCNN_shanghai.csv'}}
+2021-02-16 15:56:30,757 - model.gcnn_supervisor - INFO - ('x_train', (7468, 25, 72, 1))
+2021-02-16 15:56:30,758 - model.gcnn_supervisor - INFO - ('y_train', (7468, 1, 72, 1))
+2021-02-16 15:56:30,763 - model.gcnn_supervisor - INFO - ('x_val', (1640, 25, 72, 1))
+2021-02-16 15:56:30,763 - model.gcnn_supervisor - INFO - ('y_val', (7468, 1, 72, 1))
+2021-02-16 15:56:30,764 - model.gcnn_supervisor - INFO - ('x_test', (820, 25, 72, 1))
+2021-02-16 15:56:30,765 - model.gcnn_supervisor - INFO - ('y_test', (820, 1, 72, 1))
+2021-02-16 15:56:30,766 - model.gcnn_supervisor - INFO - ('y_test_groundtruth', (820, 1, 72, 1))
+2021-02-16 15:56:36,999 - model.gcnn_supervisor - INFO - Total number of trainable parameters: 43116
+2021-02-16 15:56:37,419 - model.gcnn_supervisor - INFO - Start training ...
