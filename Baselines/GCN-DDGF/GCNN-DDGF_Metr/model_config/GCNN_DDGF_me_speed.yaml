@@ -1,0 +1,39 @@
+---
+base_dir: results
+log_level: INFO
+data:
+  batch_size: 100
+  pattern: PM0
+  dataset_dir: data
+  test_batch_size: 100
+  val_batch_size: 100
+
+model:
+  cl_decay_steps: 2000
+  horizon: 1
+  input_dim: 1
+  l1_decay: 0
+  num_nodes: 207
+  num_rnn_layers: 1 # 2
+  output_dim: 1
+  rnn_units: 60
+  seq_len: 3
+  use_curriculum_learning: true
+
+train:
+  base_lr: 0.01
+  dropout: 0
+  epoch: 0
+  epochs: 200
+  epsilon: 1.0e-3
+  global_step: 0
+  lr_decay_ratio: 0.1
+  max_grad_norm: 5
+  max_to_keep: 100
+  min_learning_rate: 2.0e-06
+  optimizer: adam
+  patience: 10
+  steps: [20] # , 30, 40, 50
+  test_every_n_epochs: 1
+  preds_file: "GCNN_Metr.csv"
+  groundtruth_file: "y_truth_GCNN_Metr.csv" 
