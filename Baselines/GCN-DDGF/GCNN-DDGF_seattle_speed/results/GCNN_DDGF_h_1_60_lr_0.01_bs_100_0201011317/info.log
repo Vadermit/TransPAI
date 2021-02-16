@@ -1,0 +1,26 @@
+2021-02-01 01:13:17,407 - model.gcnn_supervisor - INFO - Log directory: results\GCNN_DDGF_h_1_60_lr_0.01_bs_100_0201011317/
+2021-02-01 01:13:17,417 - model.gcnn_supervisor - INFO - {'base_dir': 'results', 'log_level': 'INFO', 'data': {'batch_size': 100, 'pattern': 'PM0.2', 'dataset_dir': '../data/seattle_data', 'test_batch_size': 100, 'val_batch_size': 100}, 'model': {'cl_decay_steps': 2000, 'horizon': 1, 'input_dim': 1, 'l1_decay': 0, 'num_nodes': 323, 'num_rnn_layers': 1, 'output_dim': 1, 'rnn_units': 60, 'seq_len': 3, 'use_curriculum_learning': True}, 'train': {'base_lr': 0.01, 'dropout': 0, 'epoch': 0, 'epochs': 200, 'epsilon': 0.001, 'global_step': 0, 'lr_decay_ratio': 0.1, 'max_grad_norm': 5, 'max_to_keep': 100, 'min_learning_rate': 2e-06, 'optimizer': 'adam', 'patience': 10, 'steps': [20], 'test_every_n_epochs': 1, 'preds_file': 'GCNN_seattle.csv', 'groundtruth_file': 'y_truth_GCNN_seattle.csv'}}
+2021-02-01 01:13:18,162 - model.gcnn_supervisor - INFO - ('x_train', (12383, 3, 323, 1))
+2021-02-01 01:13:18,164 - model.gcnn_supervisor - INFO - ('y_train', (12383, 1, 323, 1))
+2021-02-01 01:13:18,168 - model.gcnn_supervisor - INFO - ('x_val', (2881, 3, 323, 1))
+2021-02-01 01:13:18,169 - model.gcnn_supervisor - INFO - ('y_val', (12383, 1, 323, 1))
+2021-02-01 01:13:18,170 - model.gcnn_supervisor - INFO - ('x_test', (1440, 3, 323, 1))
+2021-02-01 01:13:18,171 - model.gcnn_supervisor - INFO - ('y_test', (1440, 1, 323, 1))
+2021-02-01 01:13:18,171 - model.gcnn_supervisor - INFO - ('y_test_groundtruth', (1440, 1, 323, 1))
+2021-02-01 01:13:20,223 - model.gcnn_supervisor - INFO - Total number of trainable parameters: 439696
+2021-02-01 01:13:20,377 - model.gcnn_supervisor - INFO - Start training ...
+2021-02-01 01:14:27,593 - model.gcnn_supervisor - INFO - Epoch [0/200] (124) train_mae: 73.6392, val_mae: 160.7514 lr:0.010000 67.2s
+2021-02-01 01:14:31,459 - model.gcnn_supervisor - INFO - Val loss decrease from inf to 160.7514, saving to results\GCNN_DDGF_h_1_60_lr_0.01_bs_100_0201011317/models-160.7514-124
+2021-02-01 01:14:31,504 - model.gcnn_supervisor - INFO - Overall Test MAPE 10.0834, RMSE 6.1269
+2021-02-01 01:15:44,663 - model.gcnn_supervisor - INFO - Epoch [1/200] (248) train_mae: 41.3800, val_mae: 163.3610 lr:0.010000 73.2s
+2021-02-01 01:16:59,944 - model.gcnn_supervisor - INFO - Epoch [2/200] (372) train_mae: 38.4743, val_mae: 162.1699 lr:0.010000 71.3s
+2021-02-01 01:18:16,289 - model.gcnn_supervisor - INFO - Epoch [3/200] (496) train_mae: 37.0763, val_mae: 171.6675 lr:0.010000 72.7s
+2021-02-01 01:19:36,274 - model.gcnn_supervisor - INFO - Epoch [4/200] (620) train_mae: 35.8821, val_mae: 161.5434 lr:0.010000 76.2s
+2021-02-01 01:20:53,924 - model.gcnn_supervisor - INFO - Epoch [5/200] (744) train_mae: 35.2503, val_mae: 165.8222 lr:0.010000 73.2s
+2021-02-01 01:22:07,703 - model.gcnn_supervisor - INFO - Epoch [6/200] (868) train_mae: 34.4444, val_mae: 172.4517 lr:0.010000 70.2s
+2021-02-01 01:23:28,445 - model.gcnn_supervisor - INFO - Epoch [7/200] (992) train_mae: 34.2051, val_mae: 165.2694 lr:0.010000 77.1s
+2021-02-01 01:24:42,911 - model.gcnn_supervisor - INFO - Epoch [8/200] (1116) train_mae: 33.5816, val_mae: 165.9357 lr:0.010000 70.4s
+2021-02-01 01:25:57,605 - model.gcnn_supervisor - INFO - Epoch [9/200] (1240) train_mae: 33.7496, val_mae: 165.0748 lr:0.010000 71.0s
+2021-02-01 01:27:17,487 - model.gcnn_supervisor - INFO - Epoch [10/200] (1364) train_mae: 33.5476, val_mae: 168.0453 lr:0.010000 76.2s
+2021-02-01 01:28:33,350 - model.gcnn_supervisor - INFO - Epoch [11/200] (1488) train_mae: 33.0481, val_mae: 174.4310 lr:0.010000 71.9s
+2021-02-01 01:28:36,856 - model.gcnn_supervisor - WARNING - Early stopping at epoch: 11
