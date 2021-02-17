@@ -237,6 +237,7 @@ class GCNNSupervisor(object):
             message = 'Epoch [{}/{}] ({}) train_mae: {:.4f}, val_mae: {:.4f} lr:{:.6f} {:.1f}s'.format(
                 self._epoch, epochs, global_step, train_mae, val_mae, new_lr, (end_time - start_time))
             self._logger.info(message)
+            stt = time.time()
             outputs = self.evaluate(sess)
             #print (outputs['groundtruth'].shape)
             test_gdt = outputs['groundtruth'][:, :, :, 0] 
@@ -246,7 +247,15 @@ class GCNNSupervisor(object):
             test_y = test_y.reshape(test_gdt.shape[0], -1, order = 'F')
             best_pred = best_pred.reshape(test_gdt.shape[0], -1, order = 'F')
             scaler = self._data['scaler']
-            
+            print('Test running time: %fs'%(time.time() - stt))
+# --------
+            # best_pred = scaler.inverse_transform(best_pred)
+            # # np.save('best_pred.npy', best_pred)
+            # mape = metrics.masked_mape_np(best_pred, test_y, test_gdt, null_val=0)
+            # rmse = metrics.masked_rmse_np(best_pred, test_y, test_gdt, null_val=0)
+            # self._logger.info(
+            #     'Overall Test MAPE %.4f, RMSE %.4f' % (mape, rmse))
+# --------
             if val_loss <= min_val_loss:
                 wait = 0
                 if save_model > 0:
