@@ -3,8 +3,8 @@ base_dir: results
 log_level: INFO
 data:
   batch_size: 100
-  pattern: CM0.4
-  dataset_dir: ../data/seattle_data
+  pattern: PM0.2
+  dataset_dir: data
   test_batch_size: 100
   val_batch_size: 100
 
