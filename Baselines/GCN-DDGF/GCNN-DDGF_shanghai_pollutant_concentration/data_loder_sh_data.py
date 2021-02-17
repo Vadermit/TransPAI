@@ -17,11 +17,11 @@ def create_sample(data_mat, time_lags):
         y[i, 0, :, 0] = data_mat[:, i + np.max(time_lags)]
     return x, y
 
-time_lags = np.arange(0, 25, 1)
-
-pattern = ['PM0', 'PM0.1', 'PM0.2', 'PM0.4', 'CM0.1', 'CM0.2', 'CM0.4']
+time_lags = np.arange(1, 25, 1)
+directory = '../../datasets/Shanghai-pollutant-dataset/'
+pattern = ['PM0']
 for pt in pattern:
-    tensor = scipy.io.loadmat('../../datasets/Shanghai-pollutant-dataset/NTS_tensor.mat')
+    tensor = scipy.io.loadmat(directory + 'NTS_tensor.mat')
     dense_tensor = tensor['tensor']
     print('The shape of the initial dataset is:')
     print(dense_tensor.shape)
@@ -32,7 +32,7 @@ for pt in pattern:
         # =============================================================================
         ### Random missing (PM) scenario
         ### Set the RM scenario by:
-        tensor = scipy.io.loadmat('../../datasets/Shanghai-pollutant-dataset/NTS_random_tensor.mat')
+        tensor = scipy.io.loadmat(directory + 'NTS_random_tensor.mat')
         random_tensor = tensor['tensor']
         binary_tensor = np.ones((dim1, dim2, dim3))
         binary_tensor[random_tensor < missing_rate] = 0 
@@ -43,7 +43,7 @@ for pt in pattern:
         ### Non random missing (CM) scenario
         # ### Set the RM scenario by:
         missing_period = 6 #data missing in continuous [6, 12, 24, 48] hours
-        random_array_file = '../../datasets/Shanghai-pollutant-dataset/NTS_random_array' + str(missing_period) + '.mat'
+        random_array_file = directory + 'NTS_random_array' + str(missing_period) + '.mat'
         tensor = scipy.io.loadmat(random_array_file)
         random_array = tensor['array'][0]
         binary_reshape_tensor = np.ones_like(dense_tensor)
@@ -84,7 +84,7 @@ for pt in pattern:
     val_x, val_y = create_sample(val_set, time_lags)
     test_x, test_y = create_sample(test_set, time_lags)
     _, test_ground_truth = create_sample(dense_test_set, time_lags)
-    dir = '../data/shanghai_data/'
+    dir = 'data/'
     outfile = dir + 'train' + pt + '.npz'
     np.savez(outfile, x=train_x, y=train_y)
     outfile = dir + 'val' + pt + '.npz'
